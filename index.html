@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #sidebar {
+            background-color: #f0f0f0;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: fit-content;
+        }
+        #sidebar nav ul {
+            list-style: none;
+            margin-top: 0;
+        }
+        #sidebar nav ul li {
+            padding: 10px;
+        }
+        #sidebar nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        #sidebar nav ul li a:hover {
+            background-color: #ccc;
+        }
+        #content {
+            margin-left: 30vw;
+            padding: 20px;
+        }
+        .logo-sidebar{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .logo-sidebar img {
+            width: 26vw;
+            height: auto;
+            padding: 1.1vh;
+            padding-right: 1.2vh;
+            padding-left: 1.2vh;
+            min-width: 10vw; 
+            min-height: 5vh; 
+            max-width: 40vw; 
+            max-height: 20vh;
+        }
+        .dashboard::before {
+            content: url('dashboard_icon.png');
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .previous-bookings::before {
+            content: url('previous_bookings_icon.png');
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .upcoming::before {
+            content: url('upcoming_icon.png');
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .announcements::before {
+            content: url('announcements_icon.png');
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="logo-sidebar">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="dashboard"><a href="#">Dashboard</a></li>
+                <li class="previous-bookings"><a href="#">Previous Bookings</a></li>
+                <li class="upcoming"><a href="#">Upcoming</a></li>
+                <li class="announcements"><a href="#">Announcements</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+
+    </div>
+</body>
+</html>

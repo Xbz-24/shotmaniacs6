@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Cambiar a 'stretch' para que los elementos ocupen todo el ancho */
+    height: 100%;
+    width: 200px;
+    background-color: #383838;
+    overflow: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #e1e1e1;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Cambiar margen a 0 */
+    padding: 10px; /* Agregar algo de relleno para dar espacio al texto */
+    width: calc(100% - 20px);
+    justify-content: start;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #535353;
+}
+
+.menu-item:active {
+    background-color: #2b2b2b;
+}
+
+.menu-item img {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow: auto;
+    background-color: #2b2b2b;
+}
+
+table {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #e1e1e1;
+}
+
+table tr:first-child {
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+}
+
+table tr:last-child {
+    border-bottom-left-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+}
+
+table tr {
+    background-color: #383838;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
